@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 56.3 56.3" style="enable-background:new 0 0 56.3 56.3;" xml:space="preserve">
+<svg version="1.1" id="Component_2_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 62 41" style="enable-background:new 0 0 62 41;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:3;}
+	.st2{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
 </style>
-<g id="Icon_feather-arrow-left-circle" transform="translate(1.5 1.5)">
-	<path id="Path_15" class="st0" d="M53.3,26.7c0,14.7-11.9,26.7-26.7,26.7S0,41.4,0,26.7C0,11.9,11.9,0,26.7,0
-		C41.4,0,53.3,11.9,53.3,26.7L53.3,26.7z"/>
-	<path id="Path_16" class="st0" d="M26.7,16L16,26.7l10.7,10.7"/>
-	<path id="Path_17" class="st0" d="M37.3,26.7H16"/>
+<g id="Group_93" transform="translate(-800 -917)">
+	<g id="Rectangle_13" transform="translate(800 917)">
+		<path class="st0" d="M62,20v1c0,11-9,20-20,20H20C9,41,0,32,0,21v-1C0,9,9,0,20,0h22C53,0,62,9,62,20z"/>
+		<path class="st1" d="M60.5,20v1c0,10.2-8.3,18.5-18.5,18.5H20C9.8,39.5,1.5,31.2,1.5,21v-1C1.5,9.8,9.8,1.5,20,1.5h22
+			C52.2,1.5,60.5,9.8,60.5,20z"/>
+	</g>
+	<g id="Icon_feather-arrow-left-circle" transform="translate(794.008 974.306) rotate(-90)">
+		<path id="Path_16" class="st2" d="M47.3,37.4L36.6,26.7L25.9,37.4"/>
+		<path id="Path_17" class="st2" d="M36.6,48V26.7"/>
+	</g>
 </g>
 </svg>

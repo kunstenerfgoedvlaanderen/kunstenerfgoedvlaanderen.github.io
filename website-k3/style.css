@@ -44,84 +44,31 @@ header {
     margin: 0 0 0 10px;
 }
 
-#logo-shrunk {
-    width: 300px;
-    margin: 0 0 0 10px;
-    padding-bottom: 4px;
-}
-
 
 
 /*----------------------------------   Navigation
 */
 
 .nav {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
+    position: fixed;
+    bottom: 30px;
     left: 0;
+    right: 0;
     z-index: 3;
-    pointer-events: none;
-}
-
-#arrow-left {
-    position: absolute;
-    width: 50px;
-    top: 45vh;
-    left: 20px;
-    pointer-events: all;  
-}
-
-#arrow-right {
-    position: absolute;
-    width: 50px;
-    top: 45vh;
-    right: 20px;
-    pointer-events: all;  
-}
-
-#arrow-bottom {
-    position: absolute;
-    left: 0;
-    right: 2px;
-    margin: 0 auto;
-    width: 35px;
-    bottom: 80px;
-    pointer-events: all; 
-}
-
-#arrow-top {
-    position: absolute;
-    left: 0;
-    right: 3px;
-    margin: 0 auto;
-    width: 35px;
-    top: 80px;
-    pointer-events: all; 
-}
-
-.nav > a > img {
-    opacity: 0.2;
-    transition: 0.2s;
-}
-
-.nav > a > img:hover {
-    opacity: 1;
+    margin: 5px;
 }
 
 .nav-map {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.902);
-    padding: 8px 5px 5px 8px;
-    border-radius: 10px;
-    left: -5px;
-    right: 0;
+    position: relative;
+    background-color: #002139cd;
+    border: 2px solid #005b9d;
+    padding: 12px 10px 8px 12px;
+    border-radius: 22px;
     margin: 0 auto;
-    width: 23px;
-    height: 43px;
+    width: 38px;
+    height: 75px;
+    filter: drop-shadow(0px 5px 8px rgb(89, 91, 93));
     display: grid; 
-    bottom: 20px;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr; 
     gap: 0 0;
@@ -132,22 +79,31 @@ header {
         "m7 m7"; 
 }
 
-.nav-map * {
-    width: 7px;
-    height: 7px;
+.nav-map > a {
+
+}
+
+.nav-map > a > div {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 2px solid #004f87;
+}
+
+.nav-map > a > div:hover {
+    border: 2px solid #0095ff;
+    /*background-color: #87b5c6;*/
 }
 
 .m1 { grid-area: m1; }
-.m2 { grid-area: m2; }
+.m2 { grid-area: m2; margin-left: -5px;}
 .m3 { grid-area: m3; }
-.m4 { grid-area: m4; }
-.m5 { grid-area: m5; }
-.m6 { grid-area: m6; }
-.m7 { grid-area: m7; justify-self: center; margin-right: 3px;}
+.m4 { grid-area: m4; margin-left: -5px;}
+.m5 { grid-area: m5;}
+.m6 { grid-area: m6; margin-left: -5px;}
+.m7 { grid-area: m7; justify-self: center; margin-left: 9px;}
 
-#highlighted { border: 1px solid #0098D4; background-color: #0098D4;}
+#highlighted { border: 2px solid #0095ff; background-color: #0095ff;}
 
 
 /*----------------------------------   Background Page Number
@@ -160,7 +116,7 @@ header {
     font-size: 200px;
     font-weight: 900;
     color: rgb(247, 207, 202);
-    bottom: -27px;
+    bottom: 0px;
     opacity: 0.9;
 }
 
@@ -174,7 +130,7 @@ header {
 .main {
     display: flex;
     justify-content: center;
-    margin: 0 0 300px 0;
+    margin: 0 0 300px 20px;
 }
 
 .module {
@@ -183,7 +139,7 @@ header {
 }
 
 .module h1 {
-    margin: 0 0 30px 10px;
+    margin: 0 0 30px 30px;
     width: 500px;
     font-size: 30px;
     font-weight: 600;
@@ -201,15 +157,34 @@ header {
 }
 
 .module h2 {
-    margin: 0 0 -30px 10px;
+    margin: 0 0 -30px 30px;
     font-size: 20px;
     font-weight: 600;
     pointer-events: none;
 }
 
 .module > img {
-    width: 800px;
+    width: 1000px;
     pointer-events: none;
+}
+
+.module > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+.module > div > p {
+    width: 500px;
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.module > div > p > b {
+    font-weight: 600;
+    font-size: 21px;
 }
 
 
@@ -305,21 +280,35 @@ header {
 
 
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-width: 1000px) {
 
-    .page-blocker {
-        opacity: 1;
-        pointer-events: all;
-    }
-    
-    .page-blocker > img {
-        width: 300px;
-        margin-bottom: 20px;
-    }
-    
-    .page-blocker > p {
-        font-size: 15px;
-        width: 200px;
+    .module > img {
+        width: 800px;
+        pointer-events: none;
+        margin-top: 10px;
     }
 
 }
+
+@media only screen and (max-width: 800px) {
+
+    .module > img {
+        width: 600px;
+        pointer-events: none;
+        margin-top: 20px;
+    }
+
+    .page-number {
+        display: none;
+    }
+
+}
+/*
+@media only screen and (max-width: 1000px) {
+
+    .module > img {
+        width: 800px;
+        pointer-events: none;
+    }
+
+}*/
