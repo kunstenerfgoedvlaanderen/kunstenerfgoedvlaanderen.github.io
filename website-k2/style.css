@@ -493,7 +493,7 @@ a { text-decoration: none; }
 .page-blocker {
     width: 100%;
     height: 100%;
-    background-color: #0098D4;
+    background-color: #768F5D;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -626,8 +626,8 @@ a { text-decoration: none; }
     }
 
     .blue-eye {
-        top: 350px;
-        left: 50px;
+        top: 180px;
+        left: 60px;
         width: 125px;
     }
 
@@ -689,7 +689,7 @@ a { text-decoration: none; }
     }
 
     .page-blocker > img {
-        width: 300px;
+        width: 280px;
         margin-bottom: 20px;
     }
 
