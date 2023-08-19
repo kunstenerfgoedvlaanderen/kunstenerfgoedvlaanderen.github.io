@@ -56,18 +56,28 @@ header {
     right: 0;
     z-index: 3;
     margin: 5px;
+    filter: opacity(0%);
+    animation: nav-fade 0.3s ease-in-out 0.5s 1 normal forwards;
+    pointer-events: none;
+}
+
+@keyframes nav-fade {
+    0% {filter: opacity(0%);}
+    100% {filter: opacity(100%);}
+
 }
 
 .nav-map {
     position: relative;
-    background-color: #002139cd;
-    border: 2px solid #005b9d;
-    padding: 12px 10px 8px 12px;
-    border-radius: 22px;
+    background-color: #ffffff71;
+    -webkit-backdrop-filter: blur(6px); /* Add this line first, it fixes blur for Safari*/
+    backdrop-filter: blur(6px);  /* This line activates blur*/
+    padding: 22px 40px 18px 40px;
+    border-radius: 20px;
     margin: 0 auto;
     width: 38px;
     height: 75px;
-    filter: drop-shadow(0px 5px 8px rgb(89, 91, 93));
+    filter: drop-shadow(0px 3px 8px rgb(150, 150, 150));
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr; 
@@ -77,6 +87,7 @@ header {
         "m2 m5"
         "m3 m6"
         "m7 m7"; 
+    pointer-events: all;
 }
 
 .nav-map > a {
@@ -87,12 +98,17 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid #004f87;
+    border: 2px solid #9f9f9f;
 }
 
 .nav-map > a > div:hover {
-    border: 2px solid #0095ff;
+    border: 2px solid #4f4f4f;
     /*background-color: #87b5c6;*/
+}
+
+.nav-map > a > div:active {
+    border: 2px solid #4f4f4f;
+    background-color: #4f4f4f;
 }
 
 .m1 { grid-area: m1; }
@@ -103,7 +119,8 @@ header {
 .m6 { grid-area: m6; margin-left: -5px;}
 .m7 { grid-area: m7; justify-self: center; margin-left: 9px;}
 
-#highlighted { border: 2px solid #0095ff; background-color: #0095ff;}
+#highlighted {border: 2px solid #9f9f9f; background-color: #9f9f9f;}
+#highlighted:hover {border: 2px solid #4f4f4f; background-color: #4f4f4f;}
 
 
 /*----------------------------------   Background Page Number
@@ -128,23 +145,25 @@ header {
 */
 
 .main {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 300px 20px;
-}
-
-.module {
+    margin: 0 10px 300px 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.module h1 {
-    margin: 0 0 30px 30px;
+
+.titles {
+    width: calc(500px + 25vw);
+    margin: 0 0 calc(40px - 3vw) 0;
+}
+
+.main h1 {
+    margin: 0 0 30px 0;
     width: 500px;
     font-size: 30px;
     font-weight: 600;
     line-height: 100%;
-    color: rgb(247, 207, 202);
+    color: #f7cfca;
     cursor: default;
     pointer-events: none;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -156,88 +175,66 @@ header {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.module h2 {
-    margin: 0 0 -30px 30px;
+.main h2 {
+    margin: 0 0 0 0;
+    width: 400px;
     font-size: 20px;
     font-weight: 600;
     pointer-events: none;
 }
 
-.module > img {
-    width: 1000px;
+.main > img {
+   width: calc(400px + 40vw);
     pointer-events: none;
 }
 
-.module > div {
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 5vh 150px 0 150px;
+}
+
+.text > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0 0 0;
+    margin: 10px;
 }
 
-.module > div > p {
+.text > div > span {
+    position: relative;
+    top: 40px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 11px;
+    border-radius: 20px;
+    width: auto;
+}
+
+.text > div > p {
+    margin: 20px 0 -10px 0;
     width: 500px;
-    margin: 15px 0 0 0;
     font-size: 14px;
     line-height: 22px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.module > div > p > b {
-    font-weight: 600;
-    font-size: 21px;
+.text > div > br {
+    line-height: 200px;
 }
 
+#blue > p { background-color: #7c93bf4d; }
+#blue > span { background-color: #7c94bf; }
+#blue > p > b { color: #2e3b55; }
 
-
-/*----------------------------------   Snippets
-*/
-
-.snippets {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.snippets > p {
-    position: absolute;
-    font-size: 10px;
-    font-weight: 300;
-    line-height: 150%;
-    width: 250px;
-    z-index: 1;
-}
-
-.snippets > p > b {
-    font-weight: 600;
-}
-
-#s1-1 {top: -170px; left: 610px;}
-#s1-2 {top: -125px; left: 330px;}
-#s1-3 {top: 190px; left: -100px;}
-#s1-4 {top: 205px; left: 185px;}
-#s1-5 {top: 190px; left: 460px;}
-
-#s2-1 {top: -30px; left: 470px;}
-#s2-2 {top: 200px; left: 190px;}
-
-#s3-1 {top: 205px; left: 250px;}
-
-#s4-1 {top: 205px; left: 150px;}
-
-#s6-1 {top: 190px; left: -125px;}
-#s6-2 {top: -65px; left: 305px;}
-#s6-3 {top: -110px; left: 548px;}
-#s6-4 {top: -160px; left: 790px;}
-#s6-5 {top: 205px; left: 180px;}
-#s6-6 {top: 205px; left: 450px;}
-#s6-7 {top: 190px; left: 715px;}
-
-#s7-1 {top: -35px; left: 325px;}
-#s7-2 {top: -75px; left: 610px;}
-#s7-3 {top: 205px; left: 680px;}
-#s7-4 {top: 205px; left: 180px;}
+#orange > p { background-color: #ee81684d; }
+#orange > span { background-color: #ee8168; }
+#orange > p > b { color: #723b2e; }
 
 
 
@@ -279,8 +276,8 @@ header {
 
 
 
-
-@media only screen and (max-width: 1000px) {
+/*
+@media only screen and (max-width: 1200px) {
 
     .module > img {
         width: 800px;
@@ -290,7 +287,7 @@ header {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
     .module > img {
         width: 600px;
@@ -302,7 +299,10 @@ header {
         display: none;
     }
 
-}
+}*/
+
+
+
 /*
 @media only screen and (max-width: 1000px) {
 
