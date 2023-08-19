@@ -128,10 +128,12 @@
 <rect id="Rectangle_11" x="424.5" y="229" class="st1" width="383.3" height="11"/>
 <rect id="Rectangle_12" x="812" y="229" class="st5" width="383.3" height="11"/>
 <path class="st7" d="M469.7,167.8"/>
-<line class="st8" x1="32.9" y1="164.3" x2="441.7" y2="164.3"/>
-<line class="st9" x1="410.6" y1="140.3" x2="819.4" y2="140.3"/>
-<circle id="Ellipse_47_3_" class="st10" cx="625.1" cy="140.3" r="16.7"/>
-<text transform="matrix(1 0 0 1 619.96 146.8)" class="st11 st12 st13">2</text>
+<line class="st8" x1="32.9" y1="164.3" x2="427.6" y2="164.3"/>
+<g>
+	<line class="st9" x1="410.6" y1="144.3" x2="819.4" y2="144.3"/>
+	<circle id="Ellipse_47_3_" class="st10" cx="625.1" cy="144.3" r="16.7"/>
+	<text transform="matrix(1 0 0 1 619.96 150.8)" class="st11 st12 st13">2</text>
+</g>
 <circle id="Ellipse_47_1_" class="st14" cx="225.9" cy="164.3" r="16.7"/>
 <text transform="matrix(1 0 0 1 220.8381 170.8)" class="st11 st12 st13">1</text>
 </svg>

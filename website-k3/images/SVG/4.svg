@@ -12,12 +12,10 @@
 	.st6{fill:#33ACDC;}
 	.st7{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
 	.st8{fill:none;stroke:#223278;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;}
-	.st9{fill:none;stroke:#914A0C;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;}
-	.st10{fill:#F08164;}
-	.st11{fill:#FFFFFF;}
-	.st12{font-family:'MyriadPro-Semibold';}
-	.st13{font-size:20px;}
-	.st14{fill:#7B93C1;}
+	.st9{fill:#7B93C1;}
+	.st10{fill:#FFFFFF;}
+	.st11{font-family:'MyriadPro-Semibold';}
+	.st12{font-size:20px;}
 </style>
 <g class="st0">
 	<path class="st1" d="M438.4,261v-8.4h-0.1l-3.2,7.7h-1.7l-3.2-7.7H430v8.4h-2.4v-12.6h3.1l3.5,8.4h0.2l3.5-8.4h3.1V261H438.4z"/>
@@ -128,10 +126,7 @@
 <rect id="Rectangle_11" x="424.5" y="229" class="st1" width="383.3" height="11"/>
 <rect id="Rectangle_12" x="812" y="229" class="st5" width="383.3" height="11"/>
 <path class="st7" d="M469.7,167.8"/>
-<line class="st8" x1="32.9" y1="164.3" x2="441.7" y2="164.3"/>
-<line class="st9" x1="410.6" y1="140.3" x2="819.4" y2="140.3"/>
-<circle id="Ellipse_47_3_" class="st10" cx="625.1" cy="140.3" r="16.7"/>
-<text transform="matrix(1 0 0 1 619.96 146.8)" class="st11 st12 st13">2</text>
-<circle id="Ellipse_47_1_" class="st14" cx="225.9" cy="164.3" r="16.7"/>
-<text transform="matrix(1 0 0 1 220.8381 170.8)" class="st11 st12 st13">1</text>
+<line class="st8" x1="32.9" y1="164.3" x2="427.6" y2="164.3"/>
+<circle id="Ellipse_47_1_" class="st9" cx="225.9" cy="164.3" r="16.7"/>
+<text transform="matrix(1 0 0 1 220.8381 170.8)" class="st10 st11 st12">1</text>
 </svg>
