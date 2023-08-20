@@ -194,7 +194,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 5vh 150px 0 150px;
+    margin: 5vh 1vw 0 1vw;
 }
 
 .text > div {
@@ -206,7 +206,7 @@ header {
 
 .text > div > span {
     position: relative;
-    top: 40px;
+    top: 36px;
     color: white;
     font-size: 20px;
     text-align: center;
@@ -217,10 +217,10 @@ header {
 
 .text > div > p {
     margin: 20px 0 -10px 0;
-    width: 500px;
+    width: 400px;
     font-size: 14px;
     line-height: 22px;
-    padding: 20px;
+    padding: 25px 20px 25px 20px;
     border-radius: 20px;
 }
 
@@ -303,10 +303,6 @@ header {
         margin: 20px 0 -10px 0;
         width: 80vw;
         max-width: 400px;
-        font-size: 14px;
-        line-height: 22px;
-        padding: 20px;
-        border-radius: 20px;
     }
 
     .text {
@@ -314,45 +310,3 @@ header {
     }
 
 }
-
-
-
-
-
-
-/*
-@media only screen and (max-width: 1200px) {
-
-    .module > img {
-        width: 800px;
-        pointer-events: none;
-        margin-top: 10px;
-    }
-
-}
-
-@media only screen and (max-width: 1000px) {
-
-    .module > img {
-        width: 600px;
-        pointer-events: none;
-        margin-top: 20px;
-    }
-
-    .page-number {
-        display: none;
-    }
-
-}*/
-
-
-
-/*
-@media only screen and (max-width: 1000px) {
-
-    .module > img {
-        width: 800px;
-        pointer-events: none;
-    }
-
-}*/

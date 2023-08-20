@@ -510,37 +510,27 @@ a { text-decoration: none; }
 /*----------------------------------   Connection lines
 */
 
-.all-lines {
-    height: 520px;
-}
+.all-lines { height: 520px; }
 
 .faded-connections {
+    width: 1150px;
     position: relative;
     left: -1050px;
     top: -253px;
     z-index:-1;
-    animation: faded-connections 1s linear 0s 1 normal forwards;
-}
-
-@keyframes faded-connections {
-    0% {opacity: 0;}
-    70% {opacity: 0;}
-    100% {opacity: 1;}
 }
 
 .connections {
+    width: 1150px;
     position: relative;
     left: -1050px;
     top: -444px;
     z-index:-1;
-    animation: connections 1s linear 0s 1 normal forwards;
 }
 
-@keyframes connections {
-    0% {opacity: 0;}
-    70% {opacity: 0;}
-    100% {opacity: 1;}
-}  
+#invisible { /* for index.html, without it everything falls apart */
+    opacity: 0;
+}
 
 
 
@@ -705,14 +695,15 @@ a { text-decoration: none; }
         left: 12px;
     }
 
+    #small-screen-lightgray {
+        color: #EBEBEB;
+        z-index:-1;
+    }
+
     .main-body {
         margin: 35px calc(26% - 350px) 0 auto;
         float: right;
         width: 850px;
-    }
-
-    .main-tiles {
-        width: 630px;
     }
 
     .top-labels {
@@ -724,54 +715,46 @@ a { text-decoration: none; }
 
     .tile-grid {
         display: grid;
-        height: 330px;
-        gap: 3px 0;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "meemoo meemoo meemoo . faro faro faro . ckv ckv ckv . mhka mhka mhka mleuven mleuven mleuven"
-        "archiefpunt archiefpunt archiefpunt . kunstenpunt kunstenpunt kunstenpunt . vai vai vai . smak smak smak dhondt dhondt dhondt"
-        "cultuurloket cultuurloket cultuurloket . . . . . cemper cemper cemper . middelheim middelheim middelheim muzee muzee muzee"
-        ". . . . . . . . . . . . fomu fomu fomu letterenhuis letterenhuis letterenhuis"
-        ". . . . . . . . . . . . designmuseum designmuseum designmuseum argos argos argos"
-        "wpa wpa wpa denktank denktank denktank tracks tracks tracks . . . stuk stuk stuk momu momu momu";
+        height: 327px;
+        gap: 5px 13px;
         margin: 17px 0 0 10px;
     }
 
     .tile-grid > div {
-        width: 100px;
+        width: auto;
     }
 
     .tile-grid > div > a > img {
-        top: -33px;
+        top: -29px;
     }
 
     .tile-text {
-        font-size: 13px;
+        font-size: 10px;
+        width: auto;
         top: 4px;
         left: 0;
     }
 
     .tile-grid > div > a > span {
-        height: 7px;
-        width: 7px;
-        top: 40px;
-        left: 87px;
+        height: 6px;
+        width: 6px;
+        top: 37px;
+        left: 65px;
     }
 
-    #adjust-denktank {top: -43px;}
-    #adjust-denktank-text {top: 0; border-radius: 8px; font-size: 10px;}
-    #adjust-dhondt {top: -49px;}
-    #adjust-dhondt-text {top: -3px; border-radius: 8px;}
-    #adjust-designmuseum {top: -49px;}
-    #adjust-designmuseum-text {top: -3px; border-radius: 8px;}
-    #adjust-cemper {top: -41px;}
-    #adjust-cemper-text {top: -3px;}
+    #adjust-denktank {top: -37px;}
+    #adjust-denktank-text {top: 0; border-radius: 8px; font-size: 8px;}
+    #adjust-dhondt {top: -41px;}
+    #adjust-dhondt-text {top: 0px; border-radius: 8px;}
+    #adjust-designmuseum {top: -41px;}
+    #adjust-designmuseum-text {top: 0px; border-radius: 8px;}
+    #adjust-cemper {top: -34px;}
+    #adjust-cemper-text {top: 0px;}
     .adjust-cemper-dot {
-        height: 7px;
-        width: 7px;
-        top: 33px;
-        left: 78px;
+        height: 6px;
+        width: 6px;
+        top: 31px;
+        left: 57px;
     }
 
     #blue-overlay > a > img{border: 25px solid #1A426C;}  
@@ -866,14 +849,14 @@ a { text-decoration: none; }
 
     .faded-connections {
         left: -655px;
-        top: -235px;
+        top: -240px;
         width: 750px;
     }
 
     .connections {
-        left: -650px;
+        left: -660px;
         top: -370px;
-        width: 730px;
+        width: 748px;
     }
 
 }

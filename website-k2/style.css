@@ -312,15 +312,15 @@ a { text-decoration: none; }
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background: #4E5B42;
-    border: 38px solid #4E5B42;
-    -webkit-filter: brightness(100%);
+    background: #31442e;
+    border: 38px solid #31442e;
+   -webkit-filter: brightness(100%);
     -moz-filter: brightness(100%);
     filter: brightness(100%);
 }
 
 #blue-overlay > a > p {                  /*   actually green   */
-    background-color: #4E5B42;
+    background-color: #31442e;
 }
 
 #gray-overlay > a > img{
@@ -608,7 +608,7 @@ a { text-decoration: none; }
         left: 78px;
     }
 
-    #blue-overlay > a > img{border: 25px solid #4E5B42;}  
+    #blue-overlay > a > img{border: 25px solid #31442e;}  
     #gray-overlay > a > img{border: 25px solid #9B9B9B;}
 
     .main-index { margin: 107px 20px 0 10px; }
