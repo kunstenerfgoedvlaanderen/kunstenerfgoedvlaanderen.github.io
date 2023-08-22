@@ -35,7 +35,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 0 calc(26vh - 100px ) 0;
+    margin: 30px 0 0 0;
     background-color: white;
 }
 
@@ -90,10 +90,6 @@ header {
     pointer-events: all;
 }
 
-.nav-map > a {
-
-}
-
 .nav-map > a > div {
     width: 12px;
     height: 12px;
@@ -111,13 +107,13 @@ header {
     background-color: #4f4f4f;
 }
 
-.m1 { grid-area: m1; }
-.m2 { grid-area: m2; margin-left: -5px;}
-.m3 { grid-area: m3; }
-.m4 { grid-area: m4; margin-left: -5px;}
-.m5 { grid-area: m5;}
-.m6 { grid-area: m6; margin-left: -5px;}
-.m7 { grid-area: m7; justify-self: center; margin-left: 9px;}
+.m1 {grid-area: m1;}
+.m2 {grid-area: m2; margin-left: -5px;}
+.m3 {grid-area: m3;}
+.m4 {grid-area: m4; margin-left: -5px;}
+.m5 {grid-area: m5;}
+.m6 {grid-area: m6; margin-left: -5px;}
+.m7 {grid-area: m7; justify-self: center; margin-left: 9px;}
 
 #highlighted {border: 2px solid #9f9f9f; background-color: #9f9f9f;}
 #highlighted:hover {border: 2px solid #4f4f4f; background-color: #4f4f4f;}
@@ -145,7 +141,7 @@ header {
 */
 
 .main {
-    margin: 0 10px 300px 10px;
+    margin: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,13 +153,7 @@ header {
     margin: 0 0 calc(40px - 3vw) 0;
 }
 
-.main h1 {
-    margin: 0 0 30px 0;
-    width: 500px;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 100%;
-    color: #f7cfca;
+h1,h2 {
     cursor: default;
     pointer-events: none;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -171,11 +161,25 @@ header {
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-.main h2 {
+h1 {
+    margin: 25px 0 calc(13vh - 40px) 0;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+h2 {
+    margin: 0 0 30px 0;
+    width: 500px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #f7cfca;
+}
+
+h3 {
     margin: 0 0 0 0;
     width: 400px;
     font-size: 20px;
@@ -224,17 +228,15 @@ header {
     border-radius: 20px;
 }
 
-.text > div > br {
-    line-height: 200px;
-}
+.text > div > br {line-height: 200px;}
 
-#blue > p { background-color: #7c93bf4d; }
-#blue > span { background-color: #7c94bf; }
-#blue > p > b { color: #2e3b55; }
+#blue > p {background-color: #7c93bf4d;}
+#blue > span {background-color: #7c94bf;}
+#blue > p > b {color: #2e3b55;}
 
-#orange > p { background-color: #ee81684d; }
-#orange > span { background-color: #ee8168; }
-#orange > p > b { color: #723b2e; }
+#orange > p {background-color: #ee81684d;}
+#orange > span {background-color: #ee8168;}
+#orange > p > b {color: #723b2e;}
 
 
 
@@ -276,15 +278,20 @@ header {
 
 @media only screen and (max-width: 1100px) {
 
-    header { margin: 30px 0 30px 0; }
-    .main-logo { width: calc(170px + 10vh + 10vw); }
+    header {margin: 30px 0 0 0;}
+    .main-logo {width: calc(170px + 10vh + 10vw);}
 
-    .titles h1 {
+    h1 {
+        margin: 10px 0 calc(11vh - 20px) 0;
+        font-size: 18px;
+    }
+
+    h2 {
         width: 400px;
         font-size: 27px;
     }
 
-    .titles h2 {
+    h3 {
         width: 85vw;
         font-size: 20px;
     }
@@ -305,8 +312,6 @@ header {
         max-width: 400px;
     }
 
-    .text {
-        margin: 5vh 1vw 0 1vw;
-    }
+    .text {margin: 5vh 1vw 0 1vw;}
 
 }

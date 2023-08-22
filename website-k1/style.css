@@ -113,13 +113,9 @@ header {
 }
 
 
-.position-fixed > * {
-    position: fixed;
-}
+.position-fixed > * {position: fixed;}
 
-h1 {
-    font-size: 40px;
-}
+h1 {font-size: 40px;}
 
 h2 {
     font-size: 20px;
@@ -191,7 +187,7 @@ h2 {
     left: 8px;
 }
 
-a { text-decoration: none; }
+a {text-decoration: none;}
 
 .tile-grid > div > a > span {
     height: 8px;
@@ -225,29 +221,29 @@ a { text-decoration: none; }
 
 
 
-.meemoo { grid-area: meemoo; }
-.faro { grid-area: faro; }
-.ckv { grid-area: ckv; }
-.mhka { grid-area: mhka; }
-.mleuven { grid-area: mleuven; }
-.archiefpunt { grid-area: archiefpunt; }
-.cultuurloket { grid-area: cultuurloket; }
-.wpa { grid-area: wpa; }
-.denktank { grid-area: denktank; }
-.tracks { grid-area: tracks; }
-.kunstenpunt { grid-area: kunstenpunt; }
-.vai { grid-area: vai; }
-.cemper { grid-area: cemper; }
-.smak { grid-area: smak; }
-.dhondt { grid-area: dhondt; }
-.middelheim { grid-area: middelheim; }
-.muzee { grid-area: muzee; }
-.fomu { grid-area: fomu; }
-.letterenhuis { grid-area: letterenhuis; }
-.designmuseum { grid-area: designmuseum; }
-.argos { grid-area: argos; }
-.stuk { grid-area: stuk; }
-.momu { grid-area: momu; }
+.meemoo {grid-area: meemoo;}
+.faro {grid-area: faro;}
+.ckv {grid-area: ckv;}
+.mhka {grid-area: mhka;}
+.mleuven {grid-area: mleuven;}
+.archiefpunt {grid-area: archiefpunt;}
+.cultuurloket {grid-area: cultuurloket;}
+.wpa {grid-area: wpa;}
+.denktank {grid-area: denktank;}
+.tracks {grid-area: tracks;}
+.kunstenpunt {grid-area: kunstenpunt;}
+.vai {grid-area: vai;}
+.cemper {grid-area: cemper;}
+.smak {grid-area: smak;}
+.dhondt {grid-area: dhondt;}
+.middelheim {grid-area: middelheim;}
+.muzee {grid-area: muzee;}
+.fomu {grid-area: fomu;}
+.letterenhuis {grid-area: letterenhuis;}
+.designmuseum {grid-area: designmuseum;}
+.argos {grid-area: argos;}
+.stuk {grid-area: stuk;}
+.momu {grid-area: momu;}
 
 
 
@@ -255,9 +251,7 @@ a { text-decoration: none; }
 /*----------------------------------   Tiles index
 */
 
-.main-index {
-    margin: 125px 0 0 50px;
-}
+.main-index {margin: 125px 0 0 50px;}
 
 .main-index > a {
     text-decoration: none;
@@ -319,7 +313,7 @@ a { text-decoration: none; }
 #faded-navy {background-color: #1A426C; opacity: 0.35;}
 #faded-bluegray {background-color: #8F9EAD; opacity: 0.35;}
 
-#faded-text-color { opacity: 0.35; }
+#faded-text-color {opacity: 0.35;}
 
 #grayed-out {
     opacity: 0.2;
@@ -338,9 +332,7 @@ a { text-decoration: none; }
     filter: brightness(100%);
 }
 
-#blue-overlay > a > p {
-    background-color: #1A426C;
-}
+#blue-overlay > a > p {background-color: #1A426C;}
 
 #gray-overlay > a > img{
     box-sizing: border-box;
@@ -409,9 +401,7 @@ a { text-decoration: none; }
 
 
 
-.index-tags {
-    margin: 23px 0;
-}
+.index-tags {margin: 23px 0;}
 
 .index-switch {
     display: flex;
@@ -449,26 +439,19 @@ a { text-decoration: none; }
     background-color: #C6C6C6;
 }
 
-#switch-enabled-foreground {
-    animation: switch-enabled-foreground 0.4s linear 0s 1 normal forwards;
-}
+#switch-enabled-foreground {animation: switch-enabled-foreground 0.4s linear 0s 1 normal forwards;}
 
 @keyframes switch-enabled-foreground {
     0% {transform: translate(0);}
     100% {transform: translateX(12px);}
-}   
-
-
-#switch-enabled-background {
-    animation: switch-enabled-background 0.4s linear 0s 1 normal forwards;
 }
+
+#switch-enabled-background {animation: switch-enabled-background 0.4s linear 0s 1 normal forwards;}
 
 @keyframes switch-enabled-background {
     0% {background-color:#C6C6C6;}
     100% {background-color: #1A426C;}
 }    
-
-
 
 .index-switch p {
     font-size: 13px;
@@ -561,7 +544,7 @@ a { text-decoration: none; }
 /*----------------------------------   Connection lines
 */
 
-.all-lines { height: 520px; }
+.all-lines {height: 520px;}
 
 .faded-connections {
     width: 1150px;
@@ -579,9 +562,8 @@ a { text-decoration: none; }
     z-index:-1;
 }
 
-#invisible { /* for index.html, without it everything falls apart */
-    opacity: 0;
-}
+/* for index.html, without it everything falls apart */
+#invisible {opacity: 0;}
 
 
 
@@ -725,9 +707,7 @@ a { text-decoration: none; }
     transition: all 0.2s ease-in-out;
 }
 
-.pop-up-line > p:hover {
-    transform: translateX(15px);
-}
+.pop-up-line > p:hover {transform: translateX(15px);}
 
 
 
@@ -736,9 +716,7 @@ a { text-decoration: none; }
 
 @media only screen and (max-width: 1880px) {
 
-    .main-logo {
-        width: 300px;
-    }
+    .main-logo {width: 300px;}
 
     .network-label {
         width: 100px;
@@ -757,9 +735,7 @@ a { text-decoration: none; }
         width: 850px;
     }
 
-    .top-labels {
-        width: 625px;
-    }
+    .top-labels {width: 625px;}
 
     h1 {font-size: 32px;}
     h2 {font-size: 15px;}
@@ -771,13 +747,9 @@ a { text-decoration: none; }
         margin: 17px 0 0 10px;
     }
 
-    .tile-grid > div {
-        width: auto;
-    }
+    .tile-grid > div {width: auto;}
 
-    .tile-grid > div > a > img {
-        top: -29px;
-    }
+    .tile-grid > div > a > img {top: -29px;}
 
     .tile-text {
         font-size: 10px;
@@ -814,13 +786,9 @@ a { text-decoration: none; }
     #orange-overlay > a > img{border: 25px solid #8a2d20;}
     #green-overlay > a > img{border: 25px solid #387200;}
 
-    .main-index {
-        margin: 107px 20px 0 10px;
-    }
+    .main-index {margin: 107px 20px 0 10px;}
 
-    .index-line {
-        margin: 4px 10px;
-    }
+    .index-line {margin: 4px 10px;}
 
     .dot-marker {
         height: 13px;
@@ -838,7 +806,7 @@ a { text-decoration: none; }
         margin: 0 0 0 7px;
     }
 
-    .index-switch { margin: 4px 12px; }
+    .index-switch {margin: 4px 12px;}
 
     .index-switch p {
         font-size: 11px;
@@ -858,9 +826,7 @@ a { text-decoration: none; }
         font-size: 25px;
     }
 
-    .blue-face {
-        height: 1000px;
-    }
+    .blue-face {height: 1000px;}
 
     .logo-star {
         bottom: calc(18% - 210px);
@@ -872,9 +838,7 @@ a { text-decoration: none; }
         margin: 0 3px -2px 7px;
     }
 
-    .blue-info > .go-back-button {
-        font-size: 14px;
-    }
+    .blue-info > .go-back-button {font-size: 14px;}
 
     .blue-info {
         top: 200px;
@@ -897,9 +861,7 @@ a { text-decoration: none; }
         margin: 0 0 12px 0;
     }
 
-    .blue-info > .learn-more-button {
-        font-size: 9px;
-    }
+    .blue-info > .learn-more-button {font-size: 9px;}
 
     .faded-connections {
         left: -655px;
