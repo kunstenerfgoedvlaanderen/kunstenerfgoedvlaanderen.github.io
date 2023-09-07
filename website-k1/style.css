@@ -144,7 +144,7 @@ h2 {
     "cultuurloket cultuurloket . . . . . cemper cemper . middelheim middelheim muzee muzee"
     ". . . . . . . . . . fomu fomu letterenhuis letterenhuis"
     ". . . . . . . . . . designmuseum designmuseum argos argos"
-    "wpa wpa denktank denktank tracks tracks . . . . stuk stuk momu momu";
+    "wpa wpa denktank denktank tracks tracks . . . . . . momu momu";
     height: 508px;
     margin: 17px 0 0 30px;
 }
@@ -242,7 +242,6 @@ a {text-decoration: none;}
 .letterenhuis {grid-area: letterenhuis;}
 .designmuseum {grid-area: designmuseum;}
 .argos {grid-area: argos;}
-.stuk {grid-area: stuk;}
 .momu {grid-area: momu;}
 
 
@@ -251,11 +250,13 @@ a {text-decoration: none;}
 /*----------------------------------   Tiles index
 */
 
-.main-index {margin: 125px 0 0 50px;}
-
-.main-index > a {
-    text-decoration: none;
-    color: inherit;
+.main-index {
+    position: absolute;
+    top: 211px;
+    right: 30px;
+    padding: 15px 5px 15px 5px;
+    border-radius: 20px;
+    background-color: rgba(239, 239, 239, 0.744);
 }
 
 .index-line {
@@ -300,6 +301,10 @@ a {text-decoration: none;}
 #navy {background-color: #1A426C;}
 #bluegray {background-color: #8F9EAD;}
 
+#wpa-color {background-color: #00bcde;}
+#denktank-color {background-color: #ff543b;}
+#tracks-color {background-color: #68d300;}
+
 #faded-green {background-color: #44B46F; opacity: 0.35;}
 #faded-lime {background-color: #A1D908; opacity: 0.35;}
 #faded-yellow {background-color: #E6C823; opacity: 0.35;}
@@ -312,6 +317,10 @@ a {text-decoration: none;}
 
 #faded-navy {background-color: #1A426C; opacity: 0.35;}
 #faded-bluegray {background-color: #8F9EAD; opacity: 0.35;}
+
+#faded-wpa-color {background-color: #A4E8F5;}
+#faded-denktank-color {background-color: #FFC3B9;}
+#faded-tracks-color {background-color: #C9F1A3;}
 
 #faded-text-color {opacity: 0.35;}
 
@@ -549,16 +558,16 @@ a {text-decoration: none;}
 .faded-connections {
     width: 1150px;
     position: relative;
-    left: -1050px;
-    top: -253px;
+    left: -1000px;
+    top: 128px;
     z-index:-1;
 }
 
 .connections {
     width: 1150px;
     position: relative;
-    left: -1050px;
-    top: -444px;
+    left: -1000px;
+    top: -35px;
     z-index:-1;
 }
 
@@ -786,7 +795,11 @@ a {text-decoration: none;}
     #orange-overlay > a > img{border: 25px solid #8a2d20;}
     #green-overlay > a > img{border: 25px solid #387200;}
 
-    .main-index {margin: 107px 20px 0 10px;}
+    .main-index {
+        position: absolute;
+        top: 187px;
+        right: calc(9vw - 110px);
+        padding: 15px 5px 15px 5px;}
 
     .index-line {margin: 4px 10px;}
 
@@ -864,14 +877,14 @@ a {text-decoration: none;}
     .blue-info > .learn-more-button {font-size: 9px;}
 
     .faded-connections {
-        left: -655px;
-        top: -240px;
+        left: -650px;
+        top: -12px;
         width: 750px;
     }
 
     .connections {
-        left: -660px;
-        top: -370px;
+        left: -650px;
+        top: 5px;
         width: 748px;
     }
 

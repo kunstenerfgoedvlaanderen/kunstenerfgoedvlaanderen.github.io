@@ -46,7 +46,7 @@ header > img {width: 400px;}
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 20vh 100px 0 100px;
+    margin: 20vh 18vw 0 18vw;
 }
 
 .panels > div > a {filter: drop-shadow(0 0 8px rgb(166, 166, 166));}

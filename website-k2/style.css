@@ -138,7 +138,7 @@ h2 {
     "cultuurloket cultuurloket . . . . . cemper cemper . middelheim middelheim muzee muzee"
     ". . . . . . . . . . fomu fomu letterenhuis letterenhuis"
     ". . . . . . . . . . designmuseum designmuseum argos argos"
-    "wpa wpa denktank denktank tracks tracks . . . . stuk stuk momu momu";
+    "wpa wpa denktank denktank tracks tracks . . . . . . momu momu";
     height: 508px;
     margin: 17px 0 0 30px;
 }
@@ -234,7 +234,6 @@ a {text-decoration: none;}
 .letterenhuis {grid-area: letterenhuis;}
 .designmuseum {grid-area: designmuseum;}
 .argos {grid-area: argos;}
-.stuk {grid-area: stuk;}
 .momu {grid-area: momu;}
 
 
@@ -552,7 +551,7 @@ a {text-decoration: none;}
         "cultuurloket cultuurloket cultuurloket . . . . . cemper cemper cemper . middelheim middelheim middelheim muzee muzee muzee"
         ". . . . . . . . . . . . fomu fomu fomu letterenhuis letterenhuis letterenhuis"
         ". . . . . . . . . . . . designmuseum designmuseum designmuseum argos argos argos"
-        "wpa wpa wpa denktank denktank denktank tracks tracks tracks . . . stuk stuk stuk momu momu momu";
+        "wpa wpa wpa denktank denktank denktank tracks tracks tracks . . . . . . momu momu momu";
         margin: 17px 0 0 10px;
     }
 
@@ -612,6 +611,25 @@ a {text-decoration: none;}
     }
 
     .blue-face {height: 1000px;}
+
+    .pop-up-dot-marker {
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    top: 5px;
+    }
+
+    .pop-up-line > p {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 3px 0 3px 15px;
+    transition: all 0.2s ease-in-out;
+    }
+
+    .pop-up-line > p:hover {transform: translateX(10px);}
 
     .logo-star {
         bottom: calc(18% - 210px);
