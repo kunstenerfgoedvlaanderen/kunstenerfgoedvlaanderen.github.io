@@ -606,11 +606,20 @@ a {text-decoration: none;}
 
     .blue-eye {
         top: 180px;
-        left: 60px;
+        left: 50px;
         width: 125px;
     }
 
-    .blue-face {height: 1000px;}
+    .blue-face {
+        top: -220px;
+        left: -130px;
+    }
+
+    .discipline-menu{
+        top: 300px;
+        left: 50px;
+        width: 450px;
+    }
 
     .pop-up-dot-marker {
     display: inline-block;
@@ -644,7 +653,7 @@ a {text-decoration: none;}
     .blue-info > .go-back-button {font-size: 14px;}
 
     .blue-info {
-        top: 200px;
+        top: 150px;
         left: 20px;
         width: 320px;
     }
