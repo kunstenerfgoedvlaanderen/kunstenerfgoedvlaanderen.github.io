@@ -24,6 +24,35 @@ body,html {font-family: Inter, sans-serif;}
 
 
 
+/*----------------------------------   Loader
+*/
+
+.overlay-loader {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  pointer-events: none;
+  opacity: 0;
+  animation: overlayLoader 1s ease-out;
+}
+
+@keyframes overlayLoader {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 /*----------------------------------   Header
 */
 
